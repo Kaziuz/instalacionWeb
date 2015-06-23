@@ -1,0 +1,21 @@
+div {
+    height:100px;
+    width:100px;
+    display: inline-block;
+}
+
+#rojo {
+    background-color:#FF0000;
+}
+
+#azul {
+    background-color:#0000FF;
+}
+
+#amarillo {
+    background-color:#E2BE22;
+}
+
+#verde {
+    background-color:#008800;
+}
