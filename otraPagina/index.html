@@ -1,15 +1,69 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title> Usuarios </title>
-		<link type="text/css" rel="stylesheet" href="css/stylesheet.css"></script>
-		<script type="text/javascript" src="js/files.js"></script>
-		<script type="text/javascript" src="js/jquery-2.js"></script>
-	</head>
-	<body>
-		<div id="rojo"></div>
-        <div id="azul"></div>
-        <div id="amarillo"></div>
-        <div id="verde"></div>
-	</body>
-</hmtl>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+        rel="stylesheet" type="text/css">
+        <link text="text/css" src="css/estilos.css">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    
+    <body>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 espaciado">
+                        <img src="../imagenes/0.jpg" class="img-responsive">
+                        <canvas id="miCanvas"></canvas>
+                        <script text="text/javascript" charset="utf-8">
+                            var c=document.getElementById("miCanvas");
+                            var ctx=c.getContext("2d");
+                            ctx.beginPath();
+                            ctx.moveTo(20, 20);
+                            ctx.lineTo(20, 100);
+                            ctx.lineTo(70, 100);
+                            ctx.stroke();
+                        </script>
+                        <h2>A title</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br>Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                    <div class="col-md-2 espaciado">
+                        <img src="../imagenes/0.jpg" class="img-responsive">
+                        <h2>A title</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br>Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                    <div class="col-md-2 espaciado">
+                        <img src="../imagenes/0.jpg" class="img-responsive">
+                        <h2>A title</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br>Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                    <div class="col-md-2 espaciado">
+                        <img src="../imagenes/0.jpg" class="img-responsive">
+                        <h2>A title</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br>Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                    <div class="col-md-2 espaciado">
+                        <img src="../imagenes/0.jpg" class="img-responsive">
+                        <h2>A title</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br>Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
