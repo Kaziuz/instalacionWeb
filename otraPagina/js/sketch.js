@@ -1,21 +1,14 @@
-var img1;
-var img2;
 
-function preload() {
-  img1 = loadImage("imagenes/0.jpg");
-  img2 = loadImage("imagenes/1.jpg");
-}
 
 function setup() {
    // El canvas ocupa toda la pantalla
-   createCanvas(windowWidth, windowHeight);
+  var plano1 = createCanvas(640, 480);
+  plano1.parent("contenedor1");
 }
 
 function draw() {
    
    // primera imagen
-   imageMode(CENTER);
-   image(img1, 140, 103, 1024/4, 768/4);
 
    strokeWeight(4);
    stroke(255, 0, 0);
@@ -28,7 +21,8 @@ function draw() {
    textAlign(CENTER);
    textFont("Helvetica");
    text("Aqui vamos a escribir algun texto que tengamos", 500, 520);
-
 }
+
+
 
 
