@@ -22,7 +22,7 @@ window.onload = function()
 			img4.attr('src', 'imagenes/4.jpg');
 			console.log("1 change");
 		}
-		else if(cont == 4)
+		else if(cont == 50)
 		{
 			img0.attr('src', 'imagenes/5.jpg');
 			img1.attr('src', 'imagenes/6.jpg');
@@ -31,7 +31,7 @@ window.onload = function()
 			img4.attr('src', 'imagenes/9.jpg');
 			console.log("2 change");
 		}
-		else if(cont == 8)
+		else if(cont == 100)
 		{
 			img0.attr('src', 'imagenes/1.jpg');
 			img1.attr('src', 'imagenes/2.jpg');
@@ -40,7 +40,7 @@ window.onload = function()
 			img4.attr('src', 'imagenes/3.jpg');
 			console.log("3 change");
 		}
-		else if(cont == 12)
+		else if(cont == 150)
 		{
 			cont = 0;
 			console.log("restart");
