@@ -35,7 +35,7 @@ function dibujarCurva3()
         ctx.lineWidth="5";
         ctx.strokeStyle="blue";
         ctx.moveTo(10, 10);
-        ctx.quadraticCurveTo(320, 500, 780, 280);
+        ctx.quadraticCurveTo(320, -10, 680, 90);
         ctx.stroke();
 };
 
