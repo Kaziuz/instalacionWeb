@@ -8,39 +8,59 @@ window.onload = function()
 
 	var cont = 0;
 	var log = document.getElementById('log');
+	var	 fotos = [];		
 
 	setInterval(function()
 	{
+		
 		cont += 1;
 
+		// se pregunta si hay mas fotos nuevas en el DOM y actualiza el contenido
 		if(cont == 1)
 		{
-			img0.attr('src', 'imagenes/0.jpg');
-			img1.attr('src', 'imagenes/1.jpg');
-			img2.attr('src', 'imagenes/2.jpg');
-			img3.attr('src', 'imagenes/3.jpg');
-			img4.attr('src', 'imagenes/4.jpg');
+			$.ajax({
+				url:"http://192.168.10.253:8080/",
+				success: function(data){
+					fotos = [];
+					$(data).find("td > a").each(function(){
+						fotos.push( $(this).attr("href"));
+					});
+				} 
+			});
+
+			// esto me imprime las fotos
+			console.log("el numero de fotos:"+fotos);
+			// vamos a ver cuantas fotos tenemos
 			console.log("1 change");
 		}
-		else if(cont == 50)
+		else if(cont == 2)
 		{
-			img0.attr('src', 'imagenes/5.jpg');
-			img1.attr('src', 'imagenes/6.jpg');
-			img2.attr('src', 'imagenes/7.jpg');
-			img3.attr('src', 'imagenes/8.jpg');
-			img4.attr('src', 'imagenes/9.jpg');
+			img0.attr('src', 'http://192.168.10.253:8080/'+fotos[0]);
+			img1.attr('src', 'http://192.168.10.253:8080/'+fotos[1]);
+			img2.attr('src', 'http://192.168.10.253:8080/'+fotos[2]);
+			img3.attr('src', 'http://192.168.10.253:8080/'+fotos[3]);
+			img4.attr('src', 'http://192.168.10.253:8080/'+fotos[4]);
 			console.log("2 change");
 		}
 		else if(cont == 100)
 		{
-			img0.attr('src', 'imagenes/1.jpg');
-			img1.attr('src', 'imagenes/2.jpg');
-			img2.attr('src', 'imagenes/5.jpg');
-			img3.attr('src', 'imagenes/7.jpg');
-			img4.attr('src', 'imagenes/3.jpg');
+			img0.attr('src', 'http://192.168.10.253:8080/'+fotos[5]);
+			img1.attr('src', 'http://192.168.10.253:8080/'+fotos[6]);
+			img2.attr('src', 'http://192.168.10.253:8080/'+fotos[7]);
+			img3.attr('src', 'http://192.168.10.253:8080/'+fotos[8]);
+			img4.attr('src', 'http://192.168.10.253:8080/'+fotos[9]);
 			console.log("3 change");
 		}
 		else if(cont == 150)
+		{
+			img0.attr('src', 'http://192.168.10.253:8080/'+fotos[10]);
+			img1.attr('src', 'http://192.168.10.253:8080/'+fotos[11]);
+			img2.attr('src', 'http://192.168.10.253:8080/'+fotos[12]);
+			img3.attr('src', 'http://192.168.10.253:8080/'+fotos[13]);
+			img4.attr('src', 'http://192.168.10.253:8080/'+fotos[14]);
+			console.log("4 change");	
+		}
+		else if(contador == 200)
 		{
 			cont = 0;
 			console.log("restart");
