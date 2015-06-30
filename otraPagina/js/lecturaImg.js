@@ -1,42 +1,38 @@
 window.onload = function()
 {
-    var img0  = $("#img1, col-md-2");
-	var img1  = $("#img2, col-md-2");
-	var img2  = $("#img3, col-md-2");
-	var img3  = $("#img4, col-md-2");
-	var img4  = $("#img5, col-md-2");
+	var img0  = $("#img1, .col-md-1");
+	var img1  = $("#img2, .col-md-1");
+	var img2  = $("#img3, .col-md-1");
 
 	var cont = 0;
 	var log = document.getElementById('log');
-	var	fotos = [];		
 
 	setInterval(function()
 	{
-		
 		cont += 1;
-		// se pregunta si hay mas fotos nuevas en el DOM y actualiza el contenido
+
 		if(cont == 1)
 		{
-			$.ajax({
-				url:"http://localhost:8080",
-				success: function(data){
-					fotos = [];
-					$(data).find("td > a").each(function(){
-						fotos.push( $(this).attr("href"));
-					});
-				} 
-
-			});
+			img0.attr('src', 'imagenes/0.jpg');
+			img1.attr('src', 'imagenes/1.jpg');
+			img2.attr('src', 'imagenes/2.jpg');
+			console.log("1 change");
 		}
-		else if(cont == 2)
+		else if(cont == 4)
 		{
-			img0.attr('src', 'http://localhost:8080/'+fotos[11]);
-			img1.attr('src', 'http://localhost:8080/'+fotos[12]);
-			img2.attr('src', 'http://localhost:8080/'+fotos[13]);
-			img3.attr('src', 'http://localhost:8080/'+fotos[14]);
-			img4.attr('src', 'http://localhost:8080/'+fotos[15]);
+			img0.attr('src', 'imagenes/3.jpg');
+			img1.attr('src', 'imagenes/4.jpg');
+			img2.attr('src', 'imagenes/5.jpg');
+			console.log("2 change");
 		}
-		else if(cont == 10)
+		else if(cont == 8)
+		{
+			img0.attr('src', 'imagenes/6.jpg');
+			img1.attr('src', 'imagenes/7.jpg');
+			img2.attr('src', 'imagenes/8.jpg');
+			console.log("3 change");
+		}
+		else if(cont == 12)
 		{
 			cont = 0;
 			console.log("restart");
@@ -44,4 +40,3 @@ window.onload = function()
 		log.value = cont;
 	},1000);
 }
-
