@@ -47,8 +47,8 @@ function dibujarCurva4()
         ctx.lineCap="round";
         ctx.lineWidth="5";
         ctx.strokeStyle="red";
-        ctx.moveTo(90, 240);
-        ctx.quadraticCurveTo(320, 100, 130, 540);
+        ctx.moveTo(115, 240);
+        ctx.quadraticCurveTo(-90, 500, 100, 540);
         ctx.stroke();
 };
 
@@ -59,9 +59,9 @@ function dibujarCurva5()
         ctx.beginPath();
         ctx.lineCap="round";
         ctx.lineWidth="5";
-        ctx.strokeStyle="yellow";
-        ctx.moveTo(95, 220);
-        ctx.quadraticCurveTo(180, 250, 330, 170);
+        ctx.strokeStyle="green";
+        ctx.moveTo(95, 35);
+        ctx.quadraticCurveTo(180, 250, 570, 70);
         ctx.stroke();
 };
                         
