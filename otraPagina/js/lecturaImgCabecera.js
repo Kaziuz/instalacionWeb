@@ -13,7 +13,9 @@ window.onload = function()
 	var imagenesMosaico = $("div.thumbs > div > img");
 	var imagenesSlide = $("div.espacio-fotogrande > div > img.img-foto");
 
-	var eventoDirList = $({}); //basado en http://stackoverflow.com/questions/22407917/how-to-emit-an-event-with-jquery
+	var eventoDirList = $({}); 
+
+	//basado en http://stackoverflow.com/questions/22407917/how-to-emit-an-event-with-jquery
 
 	eventoDirList.on("DirListRefrescado", drawImagesPopup);
 	eventoDirList.on("DirListRefrescado", drawImagesMosaic);
@@ -30,22 +32,25 @@ window.onload = function()
 			} 
 		});
 		eventoDirList.trigger("DirListRefrescado");
-		
 	}
 	
 	function drawImagesPopup(){
-		console.log("drawImagesPopup");
-		console.log(_.takeRight(fotos,5));
-		
-		// De [fotos] imprimo los últimos 5 elementos y los pongo en el dom
+		var photos = _.takeRight(fotos, 5); 
+		img0.attr('src', photos[0]);
+		img1.attr('src', photos[1]);
+		img2.attr('src', photos[2]);
+		img3.attr('src', photos[3]);
+		img4.attr('src', photos[4]);
 	}
 
 	function drawImagesMosaic(){
+		var photos = fotos.slice(1);
 		console.log("drawImagesMosaic");
-		console.log(fotos.slice(1));
-		// De [fotos] tomo las 70 últimas y pinto el mosaico
-	}
-	
+		var imagenesMosaico = $("div.thumbs > div > img");
+		$.each(imagenesMosaico, function(i,n){
+			$(n).attr('src',photos[i]);
+		});
+	}	
 	setInterval(refreshDirList,3000);
 }
 
