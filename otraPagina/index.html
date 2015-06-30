@@ -3,100 +3,47 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta content="text/html">
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
         rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/estilos.css">
         <script type="text/javascript" src="js/lecturaImg.js"></script>
-        <script type="text/javascript" src="js/skecth.js"></script>
+        <script type="text/javascript" src="js/sketch.js"></script>
     </head>
     <body>
-            <div class="row col-md-2 espacio">
-                <p>iuwhweruwehr wuerhwoiuerhouqw iuwherouwiheroiuweh wiur hwwiur </p>
-                <p style="margin-bottom: 370px">ieurhiuwr weuirgwih r wqoiurhw eir weriuhw riu wriouweh rwe rwr </p>
-                <img style="margin-top: -260px" id="img2" class="img-responsive"/>
-                <img style="margin-top: 100px" id="img1" class="img-responsive"/> 
+        <div class="row col-md-2 espacio">
+            <p>iuwhweruwehr wuerhwoiuerhouqw iuwherouwiheroiuweh wiur hwwiur </p>
+            <p style="margin-bottom: 370px">ieurhiuwr weuirgwih r wqoiurhw eir weriuhw riu wriouweh rwe rwr </p>
+                <img style="margin-top: -260px" id="img1" class="img-responsive"/>
+                <img style="margin-top: 100px"  id="img2" class="img-responsive"/> 
             </div>
             <div class="row col-md-2 espacio">
-                 <canvas id="plano2" width="490" height="600"></canvas>
-                    <script text="text/javascript">
-                        var canvas = document.getElementById("plano2");
-                        var ctx = canvas.getContext("2d");
-                            ctx.beginPath();
-                            ctx.lineCap="round";
-                            ctx.lineWidth="5";
-                            ctx.strokeStyle="violet";
-                            ctx.moveTo(5, 50);
-                            ctx.quadraticCurveTo(320, 80, 350, 485);
-                            ctx.stroke();
-                    </script>
-                <p style="margin-top:-480px";>iuwhweruwehr wuerhwoiuerhouqw iuwherouwiheroiuweh wiur hwwiur </p>
+                <canvas id="canvas01" width="490" height="600"><script>dibujarCurva1();</script></canvas>
+                <p style="margin-top: -495px">iuwhweruwehr wuerhwoiuerhouqw iuwherouwiheroiuweh wiur hwwiur </p>
                 <p>ieurhiuwr weuirgwih r wqoiurhw eir weriuhw riu wriouweh rwe rwr </p>
-                <canvas id="plano1" width="300" height="400"></canvas>
-                    <script text="text/javascript">
-                        var canvas = document.getElementById("plano1");
-                        var ctx = canvas.getContext("2d");
-                            ctx.beginPath();
-                            ctx.lineCap="round";
-                            ctx.lineWidth="5";
-                            ctx.strokeStyle="orange";
-                            ctx.moveTo(95, 10);
-                            ctx.quadraticCurveTo(110, 540, 5, 340);
-                            ctx.stroke();
-                    </script>
-                 <canvas style="margin-top: -350px" id="plano4" width="790" height="850"></canvas>
-                    <script text="text/javascript">
-                        var canvas = document.getElementById("plano4");
-                        var ctx = canvas.getContext("2d");
-                            ctx.beginPath();
-                            ctx.lineCap="round";
-                            ctx.lineWidth="5";
-                            ctx.strokeStyle="blue";
-                            ctx.moveTo(10, 10);
-                            ctx.quadraticCurveTo(320, 500, 780, 280);
-                            ctx.stroke();
-                    </script>  
+                <canvas id="canvas02" width="300" height="400"><script>dibujarCurva2();</script></canvas>
+                <canvas style="margin-top: -350px" id="canvas03" width="790" height="850"><script>dibujarCurva3();</script></canvas>      
             </div>
             <div class="row col-md-2 espacio">
                 <p>iuwhweruwehr wuerhwoiuerhouqw iuwherouwiheroiuweh wiur hwwiur </p>
                 <p>ieurhiuwr weuirgwih r wqoiurhw eir weriuhw riu wriouweh rwe rwr </p>
-                <canvas id="plano3" width="490" height="350"></canvas>
-                    <script text="text/javascript">
-                        var canvas = document.getElementById("plano3");
-                        var ctx = canvas.getContext("2d");
-                            ctx.beginPath();
-                            ctx.lineCap="round";
-                            ctx.lineWidth="5";
-                            ctx.strokeStyle="red";
-                            ctx.moveTo(95, 20);
-                            ctx.quadraticCurveTo(320, 100, 330, 240);
-                            ctx.stroke();
-                    </script>
+                <canvas id="canvas03" width="490" height="350"><script>dibujarCurva3();</script></canvas>
                 <img id="img3" class="img-responsive"/>                        
             </div>
             <div class="row col-md-2 espacio">
-                 <canvas id="plano5" width="490" height="350"></canvas>
-                 <script text="text/javascript">
-                        var canvas = document.getElementById("plano5");
-                        var ctx = canvas.getContext("2d");
-                            ctx.beginPath();
-                            ctx.lineCap="round";
-                            ctx.lineWidth="5";
-                            ctx.strokeStyle="yellow";
-                            ctx.moveTo(95, 220);
-                            ctx.quadraticCurveTo(180, 250, 330, 170);
-                            ctx.stroke();
-                    </script>
-                <p style="margin-top:-280px";>iuwhweruwehr wuerhwoiuerhouqw iuwherouwiheroiuweh wiur hwwiur </p>
-                <p>ieurhiuwr weuirgwih r wqoiurhw eir weriuhw riu wriouweh rwe rwr </p>  
-                
-                <img style="margin-top: 195px" id="img4" class="img-responsive">
+                <img style="margin-top: 0px" id="img4" class="img-responsive">
+                <canvas id="canvas04" width="490" height="450"><script>dibujarCurva4();</script></canvas>
+                <!-- <canvas id="canvas05" width="300" height="400"><script>dibujarCurva5();</script></canvas> -->
+                <p style="margin-top: -50px">ieurhiuwr weuirgwih r wqoiurhw eir weriuhw riu wriouweh rwe rwr </p>  
+                <p>ieurhiuwr weuirgwih r wqoiurhw eir weriuhw riu wriouweh rwe rwr </p> 
             </div>
             <div class="row col-md-2 espacio">
                 <img id="img5" class="img-responsive">
                 <p style="margin-top: 290px">iuwhweruwehr wuerhwoiuerhouqw iuwherouwiheroiuweh wiur hwwiur </p>
                 <p>ieurhiuwr weuirgwih r wqoiurhw eir weriuhw riu wriouweh rwe rwr </p>
             </div>
+        </div>
     </body>
 </html>
