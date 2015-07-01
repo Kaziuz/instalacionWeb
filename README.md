@@ -1,1 +1,2 @@
-Creo este README para añadir un primer commit al repo
+para correr necesita instalar un servidor local. Recomiendo http.
+https://github.com/indexzero/http-server
