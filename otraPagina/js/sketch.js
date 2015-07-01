@@ -8,8 +8,8 @@ function dibujarCurva1()
         ctx.lineCap="round";
         ctx.lineWidth="5";
         ctx.strokeStyle="violet";
-        ctx.moveTo(5, 50);
-        ctx.quadraticCurveTo(320, 80, 350, 485);
+        ctx.moveTo(5, 30);
+        ctx.quadraticCurveTo(320, 80, 310, 265);
         ctx.stroke();
 };
 
@@ -21,8 +21,8 @@ function dibujarCurva2()
         ctx.lineCap="round";
         ctx.lineWidth="5";
         ctx.strokeStyle="orange";
-        ctx.moveTo(95, 10);
-        ctx.quadraticCurveTo(110, 540, 5, 340);
+        ctx.moveTo(95, 5);
+        ctx.quadraticCurveTo(110, 240, 5, 210);
         ctx.stroke();
 };
 
@@ -34,8 +34,8 @@ function dibujarCurva3()
         ctx.lineCap="round";
         ctx.lineWidth="5";
         ctx.strokeStyle="blue";
-        ctx.moveTo(10, 10);
-        ctx.quadraticCurveTo(320, -10, 680, 90);
+        ctx.moveTo(10, 13);
+        ctx.quadraticCurveTo(320, -10, 690, 140);
         ctx.stroke();
 };
 
@@ -47,8 +47,8 @@ function dibujarCurva4()
         ctx.lineCap="round";
         ctx.lineWidth="5";
         ctx.strokeStyle="red";
-        ctx.moveTo(115, 240);
-        ctx.quadraticCurveTo(-90, 500, 100, 540);
+        ctx.moveTo(100, 240);
+        ctx.quadraticCurveTo(-40, 300, 60, 390);
         ctx.stroke();
 };
 
@@ -60,8 +60,8 @@ function dibujarCurva5()
         ctx.lineCap="round";
         ctx.lineWidth="5";
         ctx.strokeStyle="green";
-        ctx.moveTo(95, 35);
-        ctx.quadraticCurveTo(180, 250, 570, 70);
+        ctx.moveTo(75, 35);
+        ctx.quadraticCurveTo(180, 250, 520, 110);
         ctx.stroke();
 };
                         
