@@ -6778,12 +6778,15 @@ body {
 }
 /* PINGENDO COMMENT DO NOT REMOVE */
 .espacio {
-  width: 19%;
-  height: 19%;
-  margin-left: 4px;
-  padding: 15px 15px 15px 15px;
+  width: 20%;
+  height: 20%;
+  margin-left: 5px;
 }
 
 .espaciado {
   margin: 20px 15px 20px 15px;
+}
+
+.thumbs .col-md-1 {
+  padding: 2px;
 }
