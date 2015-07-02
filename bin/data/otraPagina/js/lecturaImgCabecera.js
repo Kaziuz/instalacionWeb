@@ -44,7 +44,7 @@ window.onload = function()
 	}
 
 	function drawImagesMosaic(){
-		var photos = fotos.slice(1);
+		var photos = _.takeRight(fotos, 36);
 		console.log("drawImagesMosaic");
 		var imagenesMosaico = $("div.thumbs > div > img");
 		$.each(imagenesMosaico, function(i,n){

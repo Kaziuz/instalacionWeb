@@ -180,7 +180,7 @@ void ofApp::draw(){
   if (bSnapshot == true){
     // grab a rectangle at 200,200, width and height of 300,180
     img.grabScreen(0,0,camWidth,camHeight);
-
+    ofLog() << "Toma captura";
     string fileName = "imagenes/"+ofGetTimestampString()+".png";
     img.save(fileName);
     snapString = "saved " + fileName;
