@@ -13,9 +13,11 @@
  * }
 */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/*
 * {
   border:1px solid black;
 }
+*/
 
 html {
   font-family: sans-serif;
@@ -6805,3 +6807,10 @@ body {
 .thumbs .col-md-1 {
   padding: 2px;
 }
+
+#draggable { 
+  width: 150px; 
+  height: 150px; 
+  padding: 0.5em;
+}
+
