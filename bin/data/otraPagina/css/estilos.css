@@ -13,13 +13,28 @@
  * }
 */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+* {
+  border:1px solid black;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 body {
+
   margin: 0;
+
+  /* estamos esquineando 20 grados en x y 10 en y */
+  /*
+ -moz-transform:    matrix(8.878, -0.044, -2.078, 5.467, 220.000px, -8.222px);
+ -webkit-transform: matrix(8.878, -0.044, -2.078, 5.467, 220.000, -8.222);
+ -o-transform:      matrix(8.878, -0.044, -2.078, 5.467, 220.000, -8.222);
+ transform:         matrix(8.878, -0.044, -2.078, 5.467, 220.000, -8.222);
+ transform-origin: -10.0px -10.0px;
+ */
 }
 article,
 aside,
