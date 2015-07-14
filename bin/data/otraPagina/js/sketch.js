@@ -1,5 +1,16 @@
 // FUnciones que dibujan las diferentes curvas en la pagina
 
+// jquery-ui para desplazar las imagenes
+$(function()
+{
+    $( "#img1" ).draggable();
+    $( "#img2" ).draggable();
+    $( "#img3" ).draggable();
+    $( "#img4" ).draggable();
+    $( "#img5" ).draggable();
+    $(".thumbs").draggable();
+});
+
 function dibujarCurva1()
 {
 	var canvas = document.getElementById("canvas01");
