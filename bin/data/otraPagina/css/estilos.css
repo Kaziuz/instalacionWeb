@@ -13,11 +13,9 @@
  * }
 */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-/*
-* {
+*{
   border:1px solid black;
 }
-*/
 
 html {
   font-family: sans-serif;
@@ -28,15 +26,15 @@ html {
 body {
 
   margin: 0;
-
-  /* estamos esquineando 20 grados en x y 10 en y */
-  /*
- -moz-transform:    matrix(8.878, -0.044, -2.078, 5.467, 220.000px, -8.222px);
- -webkit-transform: matrix(8.878, -0.044, -2.078, 5.467, 220.000, -8.222);
- -o-transform:      matrix(8.878, -0.044, -2.078, 5.467, 220.000, -8.222);
- transform:         matrix(8.878, -0.044, -2.078, 5.467, 220.000, -8.222);
+ /* One transform entry for each different brower.  Firefox needs px in the last two entries */
+ /* tomado de: http://www.useragentman.com/matrix/; */
+ -moz-transform:    matrix(3.333, -0.000, 0.000, 3.333, 66.667px, 66.667px);
+ -webkit-transform: matrix(3.333, -0.000, 0.000, 3.333, 66.667, 66.667);
+ -o-transform:      matrix(3.333, -0.000, 0.000, 3.333, 66.667, 66.667);
+ transform:         matrix(3.333, -0.000, 0.000, 3.333, 66.667, 66.667);
+ 
+ /* The transform origin is needed to place the transformed object in the right place. */
  transform-origin: -10.0px -10.0px;
- */
 }
 article,
 aside,
@@ -6807,10 +6805,3 @@ body {
 .thumbs .col-md-1 {
   padding: 2px;
 }
-
-#draggable { 
-  width: 150px; 
-  height: 150px; 
-  padding: 0.5em;
-}
-
