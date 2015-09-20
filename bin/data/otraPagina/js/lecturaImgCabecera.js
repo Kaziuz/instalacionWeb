@@ -23,7 +23,7 @@ window.onload = function()
 	function refreshDirList(){
 		console.log("Ejecuta refreshDirList");
 		$.ajax({
-			url:"http://localhost:8080/imagenes",
+			url:"http://localhost:8080/imagenes", 
 			success: function(data){
 				fotos = [];
 				$(data).find("td > a").each(function(){

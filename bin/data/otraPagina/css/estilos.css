@@ -6790,3 +6790,20 @@ body {
 .thumbs .col-md-1 {
   padding: 2px;
 }
+
+/* CAMBIAR ACÁ */
+.espacio-fotogrande {
+    margin-top: 8x0px;
+    padding-top: 120px;
+    padding-right: 80px;
+}
+
+.espacio-mosaico {
+  padding-top: 200px;
+}
+
+.texto {
+    text-align: left;
+    padding-left: 20px;
+    margin: 0px auto;
+}
